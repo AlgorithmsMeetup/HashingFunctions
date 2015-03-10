@@ -1,9 +1,3 @@
-var BloomFilter = function(size){
-  this.size = size;
-  this.insert = function(){};
-  this.contains = function(){};
-}
-
 describe("Bloom filter", function(){
   var bloomFilter;
   beforeEach(function(){
