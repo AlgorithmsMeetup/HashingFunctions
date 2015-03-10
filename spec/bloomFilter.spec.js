@@ -7,7 +7,7 @@ var BloomFilter = function(size){
 describe("Bloom filter", function(){
   var bloomFilter;
   beforeEach(function(){
-    bloomFilter = new BloomFilter(20);
+    bloomFilter = new BloomFilter(800, hashingFunctions);
   });
 
   it('should have an insert method', function(){
@@ -49,7 +49,7 @@ describe("Bloom filter", function(){
     });
 
     var falsePositiveRate = falsePositives / notTestValues.length;
-    var thresholdRate = 1 / 100; // 1% false positives
+    var thresholdRate = 15 / 100; // 15% false positives
     expect(falsePositiveRate).to.be.below(thresholdRate);
   });
 });
