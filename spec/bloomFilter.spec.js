@@ -1,7 +1,7 @@
 describe("Bloom filter", function(){
   var bloomFilter;
   beforeEach(function(){
-    bloomFilter = new BloomFilter(800, hashingFunctions);
+    bloomFilter = new BloomFilter(1800, hashingFunctions);
   });
 
   it('should have an insert method', function(){
