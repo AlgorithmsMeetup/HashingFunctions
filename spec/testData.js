@@ -420,7 +420,7 @@ var testValues = [
 "Villingili"
 ];
 
-var notTestData = [
+var notTestValues = [
 "Judge",
 "James",
 "Wilson",
