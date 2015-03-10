@@ -15,7 +15,7 @@ describe("Bloom filter", function(){
   it('should verify presence of inserted values', function(){
     bloomFilter.insert('cat');
     var containsCat = bloomFilter.contains('cat');
-    expect(containsCat).to.be.true;
+    expect(containsCat).to.be(true);
   });
 
   it('should be able to store and confirm presence of many values', function(){
@@ -27,7 +27,7 @@ describe("Bloom filter", function(){
       return containsAll && bloomFilter.contains(value);
     }, true);
 
-    expect(containsAll).to.be.true;
+    expect(containsAll).to.be(true);
   });
 
   it('should have a low false positive rate', function(){
